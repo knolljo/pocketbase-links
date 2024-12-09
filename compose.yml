@@ -1,0 +1,10 @@
+services:
+  linkz:
+    build: .
+    environment:
+      - APP_NAME=Linkz
+      - APP_URL=https://localhost:8090
+    ports:
+      - 8090:8090
+    volumes:
+      - ./pdata:/pb_data
